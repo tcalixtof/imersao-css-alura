@@ -1,0 +1,33 @@
+/* Aula inicial :D */
+body {
+    background-image: url('https://66.media.tumblr.com/4f877b889cbd4d3d5bef83ba5bda5e09/tumblr_nk39j9b6dC1tf8vylo1_1280.png');
+    background-size: auto 100vh;
+    font-family: Century Gothic; 
+     height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: teal;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #FA1282;  
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li {
+    list-style: none;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    color: #377FFC;
+    text-align: center;
+  }
+  .site-subtitle{
+    font-style: italic;
+  }
