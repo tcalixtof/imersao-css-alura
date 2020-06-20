@@ -1,20 +1,57 @@
-/* Aula inicial :D */
+/* soft reset do CSS*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body {
-    background-image: url('https://66.media.tumblr.com/4f877b889cbd4d3d5bef83ba5bda5e09/tumblr_nk39j9b6dC1tf8vylo1_1280.png');
+    /*background-image: url('https://66.media.tumblr.com/4f877b889cbd4d3d5bef83ba5bda5e09/tumblr_nk39j9b6dC1tf8vylo1_1280.png');*/
+    background-image: linear-gradient(to bottom right, #FC43C7, #FAC1EA, #8BBEF9, #117DF8);
     background-size: auto 100vh;
     font-family: Century Gothic; 
-     height: 100vh;
+    height: 100vh;
+    font-size: 14px;
   }
+
+  @media (min-width: 400px) {
+   body {
+    font-size: 16px;
+   }
+  }
+
+  @media (min-width: 600px) {
+    body {
+     font-size: 18px;
+    }
+   }
+
+   @media (min-width: 700px) {
+    body {
+     font-size: 20px;
+    }
+   }
+
+  header {
+    height: 100vh; /* toda a altura da tela - 100% do viewport height*/
+    display: flex;
+    justify-content: center; /*eixo Y*/
+    align-items: center;/*eixo X*/
+      }
   
   a {
     text-decoration: none;
-    color: teal;
+    color: whitesmoke;
   }
   a:hover {
     text-decoration: underline;
-    color: #FA1282;  
+    color: #8dbaf5;  
   }
-  
+
+  .menu {
+    background-color: #f03c93;
+    position: fixed;
+    width: 100vw; 
+    top: 0;
+  }  
   .menu ul {
     display: flex;
     justify-content: space-around;
@@ -22,12 +59,21 @@ body {
   .menu li {
     list-style: none;
   }
-  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
   .site-subtitle,
-  .site-title{
+  .site-title {
     color: #377FFC;
     text-align: center;
   }
-  .site-subtitle{
+  .site-subtitle {
     font-style: italic;
+  }
+
+  .img-portfolio {
+    height: 200px;
+    width: 200px;
+  
   }
