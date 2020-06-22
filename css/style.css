@@ -7,7 +7,7 @@ body {
     /*background-image: url('https://66.media.tumblr.com/4f877b889cbd4d3d5bef83ba5bda5e09/tumblr_nk39j9b6dC1tf8vylo1_1280.png');*/
     background-image: linear-gradient(to bottom right, #FC43C7, #FAC1EA, #8BBEF9, #117DF8);
     background-size: auto 100vh;
-    font-family: Century Gothic; 
+    font-family: 'Quicksand', sans-serif;
     height: 100vh;
     font-size: 14px;
   }
@@ -28,6 +28,8 @@ body {
     body {
      font-size: 20px;
     }
+
+    
    }
 
   header {
@@ -68,12 +70,59 @@ body {
     color: #377FFC;
     text-align: center;
   }
+
+  .site-title {
+    font-size: 5em;
+    font-family: 'Great Vibes', cursive; 
+  }
   .site-subtitle {
     font-style: italic;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .portfolio {
+    background-color: #FAC1EA;
+    padding: 2em;
+          
+  }
+
+  .portfolio h2 {
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 2em;
   }
 
   .img-portfolio {
     height: 200px;
     width: 200px;
-  
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  @media (min-width: 980px) {
+    .img-portfolio {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 5em;
+   }
+  @media (min-width: 550px) {
+   .portfolio .grid { 
+     grid-template-columns: repeat(2, 240px);
+    }
+   } 
+
+   @media (min-width: 980px) {
+    .portfolio .grid { 
+      align-content: center;
+      justify-content: center;
+      gap: 6em;
+     }
+    }
+
+ .portfolio figure {
+    text-align: center;
   }
