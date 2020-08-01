@@ -5,45 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/050b5b4756.js" crossorigin="anonymous"></script>
     <title>Thamiris Calixto</title>
 </head>
 <body>
-    <header> <!-- Esse é o cabeçalho da página-->
+    <header id="titulo"> <!-- Esse é o cabeçalho da página-->
         <nav class="menu">
           <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos Pessoais</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Projetos Pessoais</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="titulo">
         <h1 class="site-title">Thamiris Calixto</h1> <!-- Esse class somos nós que inventamos o nome -->
           <h2 class="site-subtitle">Jr. Front-End Developer</h2>
           </div>
       </header>
+      <section class="sobre" id="sobre">
+        <h2>Sobre</h2>
+        <figure class="avatar">
+          <img class="img-avatar" src="img/avatar.jpg">
+        
+        </figure>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus corporis temporibus quo recusandae illum iure voluptas sequi dolore! Libero ad, hic nihil nobis facilis nesciunt natus in officiis nemo voluptas.
+        </p>
+        <p>
+          Officia harum doloribus temporibus modi tempora mollitia voluptatum laborum velit molestias assumenda, ducimus commodi dignissimos repudiandae, laboriosam sunt tempore magnam! Modi vel deleniti voluptatum ad, quisquam impedit illum molestias ullam.
+        </p>
+        <p>
+          Cupiditate commodi nam ab et nemo, est mollitia vel aliquam harum ipsa esse voluptate error animi eaque suscipit, a facere at beatae voluptates quaerat nihil qui? Voluptatibus illum quis magnam.</p>
+          <p>
+            Esse site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura!</a> ^.^
+          </p>
+            
+      </section>
 
-      <section class="portfolio">
-        <h2>Portfolio</h2>
+      <div class="botao">
+        <a href="#titulo"><button class="home">
+          <i class="fas fa-home"></i>
+        </button></a>
+      </div>
+
+      <section class="portfolio" id="portfolio">
+        <h2>Projetos Pessoais</h2>
         <div class="grid">
-          <figure>
-          <img class="img-portfolio" src="../imersao-css-alura/img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-          <figcaption>Quarentena Dev - CodePen</figcaption>
-          </figure>
+         <div class="flip-card">
+          <div class="card"> <a href="https://codepen.io/collection/AerapM" target="_blank">
+             <figure class="card-front">
+             <img class="img-portfolio" src="img/QuarentenaDev.png" alt="QuarentenaDev">
+             <figcaption>Quarentena Dev </figcaption>
+             </figure>
+             <div class="card-back"> <img class="img-portfolio" src="img/codependarkside.bmp" alt="QuarentenaDevCodepen">
+             </div>
+          </div> </a>
+        </div>
+          
+
           <figure>
           <img class="img-portfolio" src="../imersao-css-alura/img/mobile-creditos-nate-grant-unsplash.jpg" alt="Mobile">
-          <figcaption>Aula Bootstrap - Digital Innovation One</figcaption>
+          <figcaption>Game Dev - Hispsta</figcaption>
           </figure>
           <figure>
           <img class="img-portfolio" src="../imersao-css-alura/img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-          <figcaption>Web design</figcaption>
+          <figcaption>Game Dev - Maycon, the cat</figcaption>
           </figure>
           <figure>
           <img class="img-portfolio" src="../imersao-css-alura/img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-          <figcaption>Projetos pessoais</figcaption>
+          <figcaption>Aula Bootstrap - Digital Innovation One</figcaption>
           </figure>
         </div>
       </section>
-        
+    </section>
+    
+    <section class="contato">
+      <h2 id="contato">Contato</h2>
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/tcalixtof">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/thamiriscalixto/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/thamiris-calixto-aa4211a3/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/thamiris.calixto">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </section>
+      
 </body>
 </html>
